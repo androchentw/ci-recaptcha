@@ -1,0 +1,5 @@
+# Use suPHP_ConfigPath to set path to .htacees on virtual host
+# Needless on localhost 
+RewriteEngine on
+RewriteCond $1 !^(index\.php|img|css|js|robots\.txt|$)
+RewriteRule ^(.*)$ index.php/$1 [L]
